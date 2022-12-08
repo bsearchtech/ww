@@ -85,7 +85,7 @@ module Ww
     def run_with_picking_server_instance!
       q = Queue.new
       opt = handler_options(@handler)
-      @thread = Thread.new { @handler.run(@app, opt ) {|server| q << silence!(server) } }
+      @thread = Thread.new { @handler.run(@app, **opt ) {|server| q << silence!(server) } }
       @server = q.pop
     end
 
