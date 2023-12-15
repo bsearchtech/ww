@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<sinatra>, [">= 0.9.4"])
+      s.add_runtime_dependency(%q<sinatra>, [">= 1.1.0"])
       s.add_runtime_dependency(%q<rack>, [">= 1.0.1"])
       s.add_runtime_dependency(%q<haml>, [">= 2.2.13"])
     else
